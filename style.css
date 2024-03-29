@@ -1,132 +1,136 @@
-/* Reset some default styles */
-body,h1, h2, h3,  ul, li{
+/* Reset default styles */
+* {
     margin: 0;
     padding: 0;
-    color: rgb(85, 7, 202);
-}
-.all{
-    background-color: rgb(206, 223, 228);
-
-    color: black;
-}
-p{
-    margin: 8px;
-    padding:8px;
-    color:black;
+    box-sizing: border-box;
+  }
+  
+  /* Basic styles */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #561ec7;
+    color: #fff;
     text-align: center;
-    border: black;
-}
-.button {
-    background-color: rgb(17, 17, 116);
-}
-
-div{
-    margin: 0;
-    padding: 0;
-    color:white;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    font-size: 2em;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .product-image {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .product-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .product-details {
+    flex: 2;
+    margin-top: 99px;
+    margin-left: 30%;
+  
+  }
+  
+  .description {
+    margin-bottom: 20px;
+  }
+  
+  .price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .cta-button {
+    display: block;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
     text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+   
+  }
+  
+  .cta-button:hover {
+    background-color: #45a049;
+  }
+  
+  footer {
+    background-color: #561ec7;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+  
+  footer nav ul {
+    list-style-type: none;
+  }
+  
+  footer nav ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  h{
+    color: green;
+    border: #333;
+    border-radius: 20%;
+  }
+  .cl img{
+   margin: 20px;
+  
+    height: 500px;
+    width: 320px;
+  }
+  .cl-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+ 
+  
+ 
+  p{
+text-align: center;
+  }
+ .bo{
+    margin-bottom: 2px;
     height: auto;
     width: auto;
-    
-}
-.colo{
-    color: azure;
-    text-align: right;
-    margin:auto;
-    padding: auto;
-    background-color: #1e98b9;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #9ed1eb;
-    color: rgba(18, 19, 18, 0.699);
-}
-
-header {
-    background-color: #333333;
-    color: #c29e9e;
-    padding: 1rem;
-    text-align: center;
-}
-
-main {
-   
-    margin:8%;
-    padding: 2rem;
-   background-color: rgb(206, 234, 234); 
-}
-
-.pricing-options {
-    display: flex;
-    justify-content: space-around;
-    
-}
-
-.option {
-    background-color: hsl(218, 27%, 84%);
-color: #0ce313;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 2rem;
-    margin:3%;
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-}
-
-.option:hover {
-    transform: scale(1.15);
-}
-
-.option button {
-    margin-top: 1rem;
-    background-color: #1238b4;
-    color: #eee8f4;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.customization-form {
-    margin-top: 2rem;
-    text-align: center;
-}
-
-.price{
-color: #431e98;
-
-}
-.customization-form label,.customization-form input {
-    display: block;
-    margin-bottom: 1rem;
-    color: rgb(1, 1, 10);
-    text-align: left;
-
-
-}
-
-/* Responsive adjustments */
-@media screen and (max-width: 768px) {
-    .pricing-options {
-        flex-direction: column;
-        align-items: center;
-        color: chartreuse;
+ }
+  /* Media Queries for Responsive Design */
+  @media screen and (max-width: 768px) {
+    .product-container {
+      flex-direction: column;
     }
-
-    .customization-form {
-        max-width: 80%;
-        margin: 2rem auto;
-        color: chocolate;
+    .product-image {
+      margin-right: 0;
     }
-}
-footer{
-    background-color: rgb(26, 142, 209);
-    color: #e0d6d6;
-
-    width: auto;
-    text-align: center;
- 
-}
-
+  }
+  
